@@ -1,0 +1,20 @@
+.days-list {
+  padding: 1px;
+  color: #563f02;
+  text-transform: uppercase;
+}
+
+.dayWeek {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.dateWeek {
+  color: #3f1705;
+}
+
+.tempWeek {
+  color: #4e3a07;
+  font-size: 32px;
+  font-weight: 500;
+}

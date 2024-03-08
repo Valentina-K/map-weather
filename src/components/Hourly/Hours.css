@@ -1,0 +1,16 @@
+.hourTime {
+  color: #563f02;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 24px;
+}
+.hourDesc {
+  min-height: 50px;
+  color: #3f1705;
+  font-style: italic;
+}
+.hourTemp {
+  font-weight: 500;
+  font-size: 32px;
+  color: #4e3a07;
+}
