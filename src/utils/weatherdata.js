@@ -1,4 +1,4 @@
-const WEATHER_KEY = process.env.REACT_APP_WEATHER_KEY;
+const WEATHER_KEY = import.meta.env.VITE_WEATHER_KEY;
 
 export function getWeatherData(position) {
   const { lat, lng } = position;

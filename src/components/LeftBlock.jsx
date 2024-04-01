@@ -5,7 +5,7 @@ import { useJsApiLoader } from "@react-google-maps/api";
 import { PlacesAutocomplete } from "./Autocomplete/Autocomplete.jsx";
 import "./LeftBlock.css";
 
-const MAP_KEY = process.env.REACT_APP_MAP_KEY;
+const MAP_KEY = import.meta.env.VITE_MAP_KEY;
 const libraries = ["places"];
 const LeftBlock = () => {
   const { isLoaded } = useJsApiLoader({

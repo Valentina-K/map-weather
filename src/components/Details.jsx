@@ -5,6 +5,9 @@ import { getCurrentWeather, getCityInfo } from "../redux/selectors.js";
 import Hourly from "./Hourly/Hourly.jsx";
 import * as utils from "../utils/parseData.js";
 
+const img_url = import.meta.env.BASE_URL;
+const direct = img_url+"/images/top_arrow_icon.svg";
+
 const Details = () => {
   const current = useSelector(getCurrentWeather);
   const city = useSelector(getCityInfo);
@@ -57,7 +60,7 @@ const Details = () => {
         <span>Wind</span>
         <div style={{ display: "flex" }}>
           <span>{Math.round(speed)}</span>
-          <img src="/images/top_arrow_icon.svg" alt="deg" style={style} />
+          <img src={direct} alt="deg" style={style} />
           <span> m/s</span>
         </div>
       </div>
