@@ -1,5 +1,9 @@
-.main-block{
-    display: flex;
-    gap: 10px;
-    padding: 0 20px;
+.main-block {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+  padding: 0 20px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }

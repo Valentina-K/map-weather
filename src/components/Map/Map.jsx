@@ -9,7 +9,7 @@ import "./Map.css";
 //import { mapThemeLight1, mapThemeDark } from "./Theme";
 
 const containerStyle = {
-  width: "840px",
+  width: "100%",
   height: "650px",
   borderRadius: "12px",
   paddingBottom: "16px",
