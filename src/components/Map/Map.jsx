@@ -1,11 +1,9 @@
 import { useRef, useCallback } from "react";
-import { GoogleMap, Marker } from "@react-google-maps/api";
+import { GoogleMap, MarkerF } from "@react-google-maps/api";
 import { useDispatch, useSelector } from "react-redux";
 import { updatePlace } from "../../redux/action";
 import { getPlace } from "../../redux/selectors";
 import { getAddressFromCoordinates } from "../../utils/geocoding";
-import "./Map.css";
-
 //import { mapThemeLight1, mapThemeDark } from "./Theme";
 
 const containerStyle = {
@@ -33,7 +31,7 @@ const defaultOptions = {
 };
 
 export const Map = () => {
-  const { lat, lng } = useSelector(getPlace);
+  const { lat, lng, city } = useSelector(getPlace);
   const dispatch = useDispatch();
   const mapRef = useRef(undefined);
   const onLoad = useCallback(function callback(map) {
@@ -70,7 +68,7 @@ export const Map = () => {
         options={defaultOptions}
         onClick={handleClick}
       >
-        <Marker position={{ lat, lng }} icon={{ url: "/images/marker.png" }} />
+        <MarkerF position={{ lat, lng }} />
       </GoogleMap>
     </div>
   );
