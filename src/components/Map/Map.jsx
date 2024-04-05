@@ -4,15 +4,16 @@ import { useDispatch, useSelector } from "react-redux";
 import { updatePlace } from "../../redux/action";
 import { getPlace } from "../../redux/selectors";
 import { getAddressFromCoordinates } from "../../utils/geocoding";
-//import { mapThemeLight1, mapThemeDark } from "./Theme";
+import { mapThemeLight, mapThemeDark } from "./Theme";
 
 const containerStyle = {
   width: "100%",
-  height: "650px",
+  height: "576px",
   borderRadius: "12px",
   paddingBottom: "16px",
-  boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset",
-  marginBottom: "15px",
+  boxShadow: "rgba(0, 0, 0, 0.5) 2px 2px 2px 2px",
+  border: "none",
+  marginBottom: "0.3rem",
 };
 
 const defaultOptions = {
@@ -27,11 +28,11 @@ const defaultOptions = {
   scrollwheel: true,
   disableDoubleClickZoom: false,
   fullscreenControl: false,
-  /* styles: mapThemeDark, */
+  styles: mapThemeLight,
 };
 
 export const Map = () => {
-  const { lat, lng, city } = useSelector(getPlace);
+  const { lat, lng } = useSelector(getPlace);
   const dispatch = useDispatch();
   const mapRef = useRef(undefined);
   const onLoad = useCallback(function callback(map) {
@@ -68,7 +69,7 @@ export const Map = () => {
         options={defaultOptions}
         onClick={handleClick}
       >
-        <MarkerF position={{ lat, lng }} />
+        <MarkerF position={{ lat, lng }}/>
       </GoogleMap>
     </div>
   );

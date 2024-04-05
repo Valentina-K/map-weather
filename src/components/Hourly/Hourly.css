@@ -5,12 +5,12 @@
   gap: 8px;
   border-radius: 12px;
   opacity: 0.8;
-  background: radial-gradient(
-    2599.77% 127.47% at 1.6% 13.68%,
-    #fce513 0%,
-    #fce513 0.01%,
-    #fffefe 55%,
-    #dcfe0c 100%
+  background: rgb(5, 74, 191);
+  background: linear-gradient(
+    90deg,
+    rgba(193, 212, 245, 0.3) 0%,
+    rgba(251, 251, 252, 0.893) 50%,
+    rgba(199, 216, 229, 0.3) 100%
   );
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   overflow-x: scroll;

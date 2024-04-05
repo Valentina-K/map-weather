@@ -1,7 +1,4 @@
 .header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
   padding: 1rem;
   color: #fffefe;
 }
@@ -17,12 +14,4 @@
   text-align: center;
   font-size: 1.5rem;
   font-style: italic;
-}
-.header-img-wrap {
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-    gap: 0.5rem;
-  }
 }

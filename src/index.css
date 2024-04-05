@@ -3,7 +3,7 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  color: #3f1705;
+  color: #eae6e5;
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -11,7 +11,9 @@ body {
   line-height: normal;
   height: 100%;
   padding: 0;
-  background: linear-gradient(180deg, #137923 0%, rgba(9, 255, 107, 0) 100%);
+  background-image: url("/images/background.jpg");
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 p {
@@ -22,3 +24,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* 
+background: linear-gradient(180deg, #137923 0%, rgba(9, 255, 107, 0) 100%);
+ */

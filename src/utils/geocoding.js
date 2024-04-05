@@ -1,4 +1,4 @@
-const MAP_KEY = import.meta.env.VITE_MAP_KEY;
+const MAP_KEY = import.meta.env.VITE_SERVER_KEY;
 export function getAddressFromCoordinates(position) {
   const { lat, lng } = position;
   return new Promise((resolve, reject) => {
@@ -14,7 +14,6 @@ export function getAddressFromCoordinates(position) {
       .then((responseJson) => {
         if (responseJson.status === "OK") {
           resolve(responseJson?.results?.[0]?.address_components);
-          //resolve(responseJson?.results?.[0]?.formatted_address);
         } else {
           reject("not found");
         }
