@@ -30,7 +30,7 @@ ul {
   top: 0;
   transform: translateY(39px);
   background-color: #fff;
-  border: 2px solid rgba(34, 34, 34, 0.6);
+  border: 2px solid rgba(74, 71, 71, 0.6);
   width: 100%;
   border-radius: 8px;
   z-index: 3;
@@ -42,6 +42,7 @@ ul {
 .suggestion_item {
   padding: 10px 15px;
   cursor: pointer;
+  color: rgb(77, 75, 75);
 }
 .suggestion_item:hover {
   background-color: #efefef;
