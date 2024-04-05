@@ -1,12 +1,9 @@
 .week {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 740px;
+  max-width: 90vw;
   gap: 10px;
   padding: 8px 10px;
   border-radius: 12px;
-  background: rgb(5, 74, 191);
   background: linear-gradient(
     90deg,
     rgba(5, 74, 191, 0.3) 0%,
@@ -14,11 +11,7 @@
     rgba(5, 74, 191, 0.3) 100%
   );
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(2px);
-  overflow-x: scroll;
-  @media screen and (min-width: 768px) {
-    overflow-x: auto;
-  }
+  overflow-x: auto;
 }
 .week-item {
   text-align: center;

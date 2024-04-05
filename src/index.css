@@ -1,6 +1,6 @@
 body {
   max-width: 1440px;
-  width: 100%;
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
   color: #eae6e5;
@@ -9,7 +9,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  height: 100%;
   padding: 0;
   background-image: url("/images/background.jpg");
   background-position: center;
