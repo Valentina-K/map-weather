@@ -1,4 +1,4 @@
-const MAP_KEY = import.meta.env.SERVER_KEY;
+const MAP_KEY = import.meta.env.VITE_SERVER_KEY;
 export function getAddressFromCoordinates(position) {
   const { lat, lng } = position;
   return new Promise((resolve, reject) => {
