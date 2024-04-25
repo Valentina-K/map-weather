@@ -1,11 +1,6 @@
 import React from "react";
 import "./Header.css";
 
-const img_url = import.meta.env.BASE_URL;
-const sun_src = img_url+"/images/sun.png";
-const snow_src = img_url+"/images/снег.png";
-const rain_src = img_url+"/images/rain.png";
-
 export const Header = () => {
   
   return (
