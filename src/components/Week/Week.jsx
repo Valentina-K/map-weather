@@ -7,7 +7,7 @@ import DaysOfWeek from "./DaysOfWeek";
 const Week = () => {
   const list = useSelector(getWeather);
   const filterList = list.filter(
-    (item, index) => index === 0 || index % 8 === 0
+    (item) => item.dt_txt.includes('12:00:00') 
   );
   return (
     <ul className="week">
